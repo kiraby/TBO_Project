@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Format Checker</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Cherry+Bomb+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="tbo.css" />
+    <link rel="icon" type="image/png" href="assets/Pink icon.jpeg" />
+  </head>
+  <body>
+    <!-- Background music -->
+    <audio
+      id="bgMusic"
+      src="assets/seasons-wte-instrumental (mp3cut.net).mp3"
+      autoplay
+      loop
+      muted
+    ></audio>
+    <audio id="successSound" src="assets/valid.wav"></audio>
+    <audio id="errorSound" src="assets/invalid.wav"></audio>
+
+    <!-- Tombol Mute -->
+    <button id="muteBtn">♬.ᐟ</button>
+
+    <!-- Dark mode toggle -->
+    <button id="darkModeToggle">‧₊˚ ☽ ⋅</button>
+
+    <div class="container">
+      <div class="form-container">
+        <div class="left">
+          <h2>Time Format Checker ────୨ৎ────</h2>
+          <form id="registerForm">
+            <div class="input-group">
+              <label for="timeInput">Enter Time (12-hour format)₊˚⊹ᰔ</label>
+              <div class="input-row">
+                <input
+                  type="text"
+                  id="timeInput"
+                  placeholder="e.g. 09:30 AM"
+                  required
+                />
+                <button type="submit" id="submitBtn">˗ˏˋ Submit ˎˊ˗</button>
+              </div>
+            </div>
+          </form>
+          <div id="validationMessage"></div>
+        </div>
+        <div class="right"><img src="assets/koket cup.jpeg"</div>
+      </div>
+    </div>
+    <script src="tbo.js"></script>
+  </body>
+</html>
